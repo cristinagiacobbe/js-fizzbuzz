@@ -23,22 +23,29 @@ for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz", i );  
         boxElement.innerText = "FizzBuzz";
+        boxElement.style.backgroundColor = ("#C67171");
         ContainerElement.append(boxElement)
+        
 
     } else if (i % 3 === 0) {
         console.log("Fizz", i );  
-        boxElement.innerText = "Fizz";
+        boxElement.innerText = "Fizz";  
+        boxElement.style.backgroundColor = ("#1cad78");      
         ContainerElement.append(boxElement)
+       
 
     } else if (i % 5 === 0) {
         console.log("Buzz", i );  
         boxElement.innerText = "Buzz" ;
-        ContainerElement.append(boxElement)
+        boxElement.style.backgroundColor = ("#EEEE00");
+        ContainerElement.append(boxElement)        
 
     } else {
         console.log(i); 
         boxElement.innerText = i ; 
         ContainerElement.append(boxElement)
+        boxElement.style.backgroundColor = ("#7D9EC0");
+        
     }
    
 }
